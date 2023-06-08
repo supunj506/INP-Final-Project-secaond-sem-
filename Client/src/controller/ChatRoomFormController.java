@@ -39,6 +39,8 @@ public class ChatRoomFormController extends Thread implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         connectToSocket();
+        lblUserName.setText(ClientLoginFormController.userName);
+
 
     }
 
@@ -91,10 +93,6 @@ public class ChatRoomFormController extends Thread implements Initializable {
             hBox.setMaxHeight(50);
             hBox.setPrefHeight(50);
             hBox.setFillHeight(false);
-
-            vBox.setAlignment(Pos.TOP_LEFT);
-
-
 
             if(!userName.equals(ClientLoginFormController.userName+":")){
 //                System.out.println("not owner");

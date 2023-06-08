@@ -1,7 +1,7 @@
 /*
  * @author : @MJ
- * Date    : 6/7/2023
- * Time    : 11:25 AM
+ * Date    : 6/8/2023
+ * Time    : 12:15 AM
  * Project : App1
  * Created by IntelliJ IDEA.
  */
@@ -11,11 +11,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.*;
-import java.net.Socket;
 import java.util.Objects;
 
-public class Client01 extends Application {
+public class Client03 extends Application {
     public static void main(String[] args) {
         launch(args);
     }

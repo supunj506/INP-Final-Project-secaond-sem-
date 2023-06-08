@@ -22,7 +22,10 @@ public class ClientLoginFormController {
     public TextField txtUserName;
     public PasswordField txtPassword;
 
+    public static String userName;
+
     public void btnLoginOnAction(ActionEvent actionEvent) {
+        userName=txtUserName.getText();
         goToChatRoom();
 
     }

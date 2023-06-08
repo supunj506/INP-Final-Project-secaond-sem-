@@ -19,7 +19,6 @@ public class ClientManage extends Thread{
     private BufferedReader reader;
     private PrintWriter writer;
 
-
     public ClientManage(Socket socket, ArrayList<ClientManage> clients) {
         try {
             this.socket = socket;

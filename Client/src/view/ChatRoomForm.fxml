@@ -14,7 +14,7 @@
 
 <AnchorPane prefHeight="669.0" prefWidth="404.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChatRoomFormController">
    <children>
-      <Pane layoutY="607.0" prefHeight="62.0" prefWidth="404.0" style="-fx-background-color: #323233;">
+      <Pane layoutY="610.0" prefHeight="62.0" prefWidth="404.0" style="-fx-background-color: #323233;">
          <children>
             <ImageView fitHeight="30.0" fitWidth="24.0" layoutX="20.0" layoutY="19.0" onMouseClicked="#openImojeOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -40,7 +40,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <TextField fx:id="txtMassage" layoutX="96.0" layoutY="13.0" prefHeight="30.0" prefWidth="250.0" promptText="Type a message" style="-fx-background-color: #323233; -fx-text-inner-color: white;">
+            <TextField fx:id="txtMassage" layoutX="96.0" layoutY="13.0" onKeyPressed="#keySendOnAction" prefHeight="30.0" prefWidth="250.0" promptText="Type a message" style="-fx-background-color: #323233; -fx-text-inner-color: white;">
                <font>
                   <Font size="16.0" />
                </font>
@@ -50,9 +50,9 @@
             </TextField>
          </children>
       </Pane>
-      <Pane layoutY="71.0" prefHeight="536.0" prefWidth="404.0">
+      <Pane layoutY="71.0" prefHeight="540.0" prefWidth="404.0">
          <children>
-            <ScrollPane prefHeight="536.0" prefWidth="404.0">
+            <ScrollPane prefHeight="540.0" prefWidth="404.0">
                <content>
                   <VBox fx:id="vBox" fillWidth="false" prefHeight="527.0" prefWidth="373.0" styleClass="txtFont" stylesheets="@../assets/css/style.css">
                      <padding>

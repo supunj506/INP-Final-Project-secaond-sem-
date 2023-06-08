@@ -22,6 +22,7 @@ public class Client02 extends Application {
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setScene(new Scene(FXMLLoader.load(Objects.requireNonNull(getClass().getResource("view/ClientLoginForm.fxml")))));
         primaryStage.setResizable(false);
+        primaryStage.setTitle("Play Tech Pvt Ltd ");
         primaryStage.show();
     }
 }

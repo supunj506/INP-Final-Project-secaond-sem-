@@ -14,7 +14,7 @@
    <children>
       <Pane layoutY="-3.0" prefHeight="640.0" prefWidth="404.0" style="-fx-background-color: #323233;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <TextField fx:id="txtUserName" layoutX="103.0" layoutY="335.0" onKeyPressed="#keyLoginOnAction" prefHeight="44.0" prefWidth="247.0" promptText=" User Name" style="-fx-border-radius: 50px; -fx-background-radius: 50px; -fx-background-color: #69696b;">
+            <TextField fx:id="txtUserName" layoutX="103.0" layoutY="335.0" onKeyPressed="#keyLoginOnAction" prefHeight="44.0" prefWidth="247.0" promptText=" User Name" styleClass="textStyleForUserName" stylesheets="@../assets/css/style.css">
                <font>
                   <Font size="20.0" />
                </font>

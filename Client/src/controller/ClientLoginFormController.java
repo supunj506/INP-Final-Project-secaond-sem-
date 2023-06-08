@@ -39,6 +39,7 @@ public class ClientLoginFormController {
                 System.exit(0);
             });
             stage.setResizable(false);
+            stage.setTitle( "customer support division");
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();

@@ -1,7 +1,15 @@
 
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background:  #323233;
+    -fx-border-color: #323233;
+    -fx-padding: 0px;
+}
+
 .textFlowSend{
     -fx-background-color:#055deb;
     -fx-background-insets: -5 -10 -5 -5;
+    -fx-font-size: 16px;
     -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.08),2,1.0,0.5,0.5);
     -fx-shape: "M 94.658379,129.18587 H 46.277427 c -3.545458,0.23354 -5.32763,-1.59167 -5.14193,-4.67449
     v -19.39913 c 0.405797,-3.73565 2.470637,-4.56641 5.14193,-4.90821 h 43.706464 c 2.572701,0.2361 4.604321,
@@ -10,6 +18,7 @@
 
 .textFlowReceiver{
     -fx-background-color: #629dd9;
+    -fx-font-size: 16px;
     -fx-background-insets: -5 -5 -5 -10;
     -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.08),2,1.0,-0.5,-0.5);
     -fx-shape: "m 46.030545,129.18592 h 48.380952 c 3.54546,0.23355 5.32763,-1.59167 5.14193,-4.67449
@@ -18,6 +27,11 @@
     c -0.436089,3.14572 -2.890695,3.57304 -4.908212,4.67449 z";
 }
 
-.textStyle {
-    -fx-font-size: 16px;
+.textStyleForUserName {
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-border-radius:50px;
+    -fx-background-radius:50px;
+    -fx-background-color: #69696b;
+
 }

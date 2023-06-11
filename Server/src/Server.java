@@ -12,7 +12,7 @@ import java.net.Socket;
 import java.util.ArrayList;
 
 public class Server {
-    private static final ArrayList<ClientManage> clients = new ArrayList<ClientManage>();
+    private final static ArrayList<ClientManage> clients = new ArrayList<ClientManage>();
 
     public static void main(String[] args) {
         ServerSocket serverSocket;
@@ -23,9 +23,9 @@ public class Server {
                 System.out.println("Waiting for clients...");
                 socket = serverSocket.accept();
                 System.out.println("Connected Successfully...");
-                ClientManage clientThread = new ClientManage(socket, clients);
-                clients.add(clientThread);
-                clientThread.start();
+                ClientManage clientManage = new ClientManage(socket, clients);
+                clients.add(clientManage);
+                clientManage.start();
             }
         } catch (IOException e) {
             e.printStackTrace();

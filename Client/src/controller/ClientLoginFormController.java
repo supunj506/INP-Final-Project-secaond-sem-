@@ -26,7 +26,10 @@ public class ClientLoginFormController {
 
     public void btnLoginOnAction(ActionEvent actionEvent) {
         userName=txtUserName.getText();
-        goToChatRoom();
+        if(!userName.equals("")){
+            goToChatRoom();
+        }
+
     }
 
     private void goToChatRoom() {

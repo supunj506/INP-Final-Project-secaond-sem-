@@ -69,7 +69,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="lblTime" layoutX="330.0" layoutY="12.0" prefHeight="30.0" prefWidth="62.0" textFill="WHITE">
+            <Label fx:id="lblTime" layoutX="321.0" layoutY="12.0" prefHeight="30.0" prefWidth="71.0" textFill="WHITE">
                <font>
                   <Font name="Times New Roman" size="18.0" />
                </font>

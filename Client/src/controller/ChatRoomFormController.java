@@ -58,7 +58,7 @@ public class ChatRoomFormController extends Thread implements Initializable {
         setTime();
 
     }
-    @Override
+
     public void run() {
         try {
             while (true) {
@@ -67,7 +67,6 @@ public class ChatRoomFormController extends Thread implements Initializable {
                 String[] temp1 = massage.split(" ");
                 String userName = temp1[0];
                 String isImg = temp1[1];
-//            to get massage only
 
                 String[] temp2 = massage.split(" ");
                 String fullMassage = "";
@@ -76,7 +75,7 @@ public class ChatRoomFormController extends Thread implements Initializable {
                 }
 
                 if (isImg.equals("img")) {
-                    System.out.println(isImg + "  yesss");
+
                     String[] temp3 = fullMassage.split(" ");
                     String path = "";
                     for (int i = 1; i < temp3.length; i++) {
@@ -88,8 +87,8 @@ public class ChatRoomFormController extends Thread implements Initializable {
                     Image image = new Image(file.toURI().toString());
                     ImageView imageView = new ImageView(image);
 
-                    imageView.setFitHeight(160);
-                    imageView.setFitWidth(160);
+                    imageView.setFitHeight(100);
+                    imageView.setFitWidth(100);
 
                     HBox hBox = new HBox(20);
                     hBox.setAlignment(Pos.BOTTOM_RIGHT);

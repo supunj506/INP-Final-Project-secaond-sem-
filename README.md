@@ -1,4 +1,4 @@
-# Multi Client Chat Application in Java Scket Programing.
+# Multi Client Chat Application in Java Socket Programing.
 
 ## 🏆 Discription
 Simple group chat application application using socket programing in Java.
